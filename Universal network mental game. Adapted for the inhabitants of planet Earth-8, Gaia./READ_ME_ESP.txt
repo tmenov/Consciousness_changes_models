@@ -1,4 +1,4 @@
-Juego mental en red universal. Gaia adaptado para los habitantes del planeta Tierra-8.
+Juego mental en red universal. Adaptado para los habitantes del planeta Tierra-8 Gaia.
 
 La actitud espiritual diaria contribuye a la salud física y mental de los terrícolas. Esta práctica no toma más de 2 a 3 minutos, pero notarás los resultados después de una semana de práctica diaria. La práctica no dura más de 2-3 minutos.
 Por la mañana, después de que el cuerpo se despierte del sueño, relájese e intente apagar el generador de pensamientos y concéntrese en el ritmo del corazón o el ritmo de la respiración.
