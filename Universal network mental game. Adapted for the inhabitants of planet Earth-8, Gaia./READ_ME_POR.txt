@@ -1,8 +1,9 @@
 Jogo mental de rede universal. Adaptado para os habitantes do planeta Terra-8, Gaia.
 
-A atitude espiritual diária contribui para a saúde física e mental dos terráqueos. Esta prática não leva mais do que 2 a 3 minutos, mas você notará os resultados após uma semana de prática diária. A prática não leva mais de 2-3 minutos.
+A atitude espiritual diária contribui para a saúde física e mental dos terráqueos. Esta prática não leva mais do que 2 a 3 minutos, mas você notará os resultados após uma semana de prática diária. 
+
 De manhã, depois que o corpo acordar do sono, relaxe e tente desligar o gerador de pensamento e se concentrar no ritmo do coração ou na respiração.
-Diga silenciosamente ou baixinho com uma voz de servo.
+Diga silenciosamente ou baixinho...
 
 Eu sou o universo
 O universo sou eu
