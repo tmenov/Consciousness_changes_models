@@ -1,0 +1,33 @@
+A mass consciousness programming project, once developed for a dissertation.
+
+November 18, 2025
+I'm currently working on the BiologicalKEY project.
+
+This is an old project, which was started under that name back in 2015. Although, in essence, it is a continuation of the BioWulf project, which originated in DeVida.
+The essence of the project is as follows.
+At the same time, while monitoring the sleep phases of several subjects, we give a directive. The duration and intonation of the directive are determined by the phase of the moon. All subjects are in the same time zone.
+
+Essentially, it's a group meditation.
+- "Where two or three are gathered in My name, I am among them."
+This is from the Bible, Matthew 18:20 - Matthew 18:20
+
+In the DeVida project, we calculated this proportion and understood the influence of the phases of the moon and sun on meditation.
+In the BioWulf project, we developed several methods for programming the mind.
+The BiologicalKEY project studied the subconscious during various sleep phases.
+The BioKey app will bring together all of our findings from over 30 years of research.
+
+The essence of the new version of BioKey is the creation of an app and a sleep synchronizer. Everything is open source.
+As a bonus for the user:
+- Meditation for guaranteed sleep, maximum 60 minutes, minimum 10 minutes.
+- Alarm clock with original melodies.
+- Meditation for guaranteed waking up refreshed and happy.
+- Sleep analyzer graph on a time scale.
+
+The user agreement disclaims all liability and warns about meditation and about scrolling through the installation. This option is not deactivated, but users can vote for installations in the opensource project discussion chat and suggest the text of the installation itself for community discussion.
+The application constantly monitors the microphone and all background noise from the moment it is launched to track sleep until the alarm goes off. All these recordings are stored only on the user's device. After the report is generated, which is typically 2-3 minutes after the alarm goes off, all audio files from the microphones are deleted from the user's device.
+The app can also track geolocation for precise synchronization or offer the user a choice of country and city from a list.
+The app is free, forever.
+I want to launch this app myself, develop it, and show the results. And then, if the community decides it's necessary, I'll attract investment.
+I tried to create a web app at BiologicalKEY. I didn't have the energy to continue, and at some point, I stopped.
+The BioKey app will be available for Android for now, but we'll likely port it to iOS in the future.
+I'll post all the source code here.
