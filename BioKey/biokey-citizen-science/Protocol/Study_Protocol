@@ -1,0 +1,45 @@
+# BioKey Citizen Science Study
+
+## Project Goal
+Investigate whether synchronized group meditation during sleep can influence:
+- Sleep quality
+- Heart rate variability (HRV)
+- Subjective well-being
+- Brain wave patterns (if EEG available)
+
+## Study Design
+- **Type:** Observational citizen science study
+- **Duration:** 12 weeks (3 lunar cycles)
+- **Participants:** Anyone with Android device + wearable
+- **Registration:** Open (rolling enrollment)
+
+## Requirements
+- Android smartphone (version 8.0+)
+- Wearable device (smartwatch, fitness tracker) OR
+- BioKey device (if you have it)
+- Commitment: 3 nights/week for 12 weeks
+
+## How to Participate
+1. Download BioKey app from Google Play
+2. Register at osf.io/[project-link]
+3. Complete baseline questionnaires
+4. Follow meditation protocol
+5. Upload data weekly
+
+## What We Measure
+- Sleep stages (from wearable)
+- Heart rate & HRV
+- Daily questionnaires (mood, energy, stress)
+- Optional: EEG if you have compatible device
+
+## Data Sharing
+- Your data: De-identified, stored securely
+- Results: Published openly (preprints + peer-review)
+- Code: 100% open source (GPL v3)
+
+## Team
+[Your names and links]
+
+## Contact
+Email: [your-email]
+Discord: https://discord.gg/dcAZJq9A
