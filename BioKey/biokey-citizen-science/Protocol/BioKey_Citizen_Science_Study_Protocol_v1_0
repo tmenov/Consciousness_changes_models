@@ -1,0 +1,111 @@
+# BioKey Citizen Science Study Protocol v1.0
+
+## Background
+Recent theories suggest aging may result from loss of bioelectric information 
+(Levin, 2024). We hypothesize that synchronized group meditation during sleep 
+may enhance bioelectric coherence and improve health markers.
+
+## Objectives
+PRIMARY: Assess feasibility of group-synchronized sleep meditation
+SECONDARY: Explore effects on sleep quality, HRV, and well-being
+
+## Design
+- Type: Prospective observational cohort
+- Registration: Open, rolling enrollment
+- Groups: 
+  * Group A: Synchronized meditation (coordinated timing)
+  * Group B: Individual meditation (own timing)
+  * Group C: Passive monitoring (no meditation)
+
+## Participants
+- Inclusion: Age 18+, smartphone, wearable device
+- Exclusion: None (all welcome)
+- Informed Consent: Digital consent via app
+
+## Intervention
+GROUP A (Synchronized):
+- Meditation audio during deep sleep (N3 phase)
+- Timing: Coordinated across group (±15 min window)
+- Frequency: 3x/week (new moon, full moon, + midpoint)
+- Content: "I am for health and longevity" (15 sec, loop 3x)
+
+GROUP B (Individual):
+- Same audio and frequency
+- Timing: Not synchronized with group
+
+GROUP C (Control):
+- Sleep monitoring only
+- No audio intervention
+
+## Duration
+- 12 weeks (3 lunar cycles)
+- Weekly data uploads
+- Monthly questionnaires
+
+## Measurements
+AUTOMATIC (from wearables):
+- Total sleep time
+- Sleep stages (light, deep, REM)
+- Heart rate & HRV (RMSSD, SDNN)
+- Steps, activity level
+
+SELF-REPORT (app questionnaires):
+DAILY:
+- Sleep quality (1-10 scale)
+- Morning energy (1-10 scale)
+- Evening stress (1-10 scale)
+
+WEEKLY:
+- WHO-5 Well-Being Index
+- Sleep quality (PSQI short form)
+
+MONTHLY:
+- Perceived Stress Scale (PSS-4)
+- Health status (SF-12)
+
+## Data Collection
+- Wearable data: Automatic sync via app
+- Questionnaires: In-app forms
+- Storage: Encrypted, GDPR-compliant
+- De-identification: Automatic (participant ID only)
+
+## Analysis Plan
+PRIMARY OUTCOMES:
+- Feasibility: % completing 12 weeks
+- Adherence: % nights with successful intervention
+
+EXPLORATORY OUTCOMES:
+- Change in sleep quality (PSQI)
+- Change in HRV (RMSSD)
+- Change in well-being (WHO-5)
+- Group differences (A vs B vs C)
+
+STATISTICAL METHODS:
+- Descriptive statistics
+- Mixed-effects models (account for repeated measures)
+- Intention-to-treat analysis
+- Subgroup analyses (group size effects)
+
+## Ethics
+- Minimal risk observational study
+- Digital informed consent
+- Right to withdraw anytime
+- Data privacy (GDPR Article 89)
+- No IRB required (citizen science exemption)
+
+## Safety Monitoring
+- App includes: "Contact doctor if you experience..."
+- Automated alerts for concerning patterns
+- Support forum for questions
+
+## Registration
+- OSF: osf.io/[your-project]
+- Study start: [Date]
+- Estimated completion: [Date + 18 months]
+
+## Funding
+- Self-funded / crowdfunded
+- No industry sponsorship
+
+## Conflicts of Interest
+- None declared
