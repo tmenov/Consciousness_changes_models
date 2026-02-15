@@ -1262,7 +1262,7 @@ Available commands: stats, geocell, wave, users, export, help
 **Дата:** 2026-02-15  
 **Авторы:** Sergey Tmenov, Maria Tmenova, Maya Tmenova  
 **Лицензия:** CC-BY 4.0 (документ), GPL-3.0 (будущий код)  
-**Контакт:** biokey.study@gmail.com
+**Контакт:** dr.tmenov@gmail.com
 
 ---
 
