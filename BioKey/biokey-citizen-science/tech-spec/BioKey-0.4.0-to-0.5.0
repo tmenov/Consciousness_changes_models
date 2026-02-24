@@ -1,0 +1,55 @@
+НЕ СДЕЛАНО (по тех-спеку) v.0.5.9.3 
+FR-1: Будильник
+
+Fade-in 30 сек — громкость прыгает сразу на 80%, нет плавного нарастания
+Кнопка "Отложить на 10 мин" — в нотификации только "Отключить", нет snooze
+WakeScreen — при срабатывании будильника нет отдельного экрана с большими кнопками (сейчас просто нотификация + SUMMARY)
+
+FR-2: Бинауральные ритмы
+
+Адаптация к дыханию — BioAudioEngine.startSmartDrift() дрейфует по времени, но не по данным дыхания из breathSensor
+Фазовые пресеты — задание требует: засыпание 8-12 Hz, легкий 4-8 Hz, глубокий 0.5-4 Hz, REM 8-13 Hz. Сейчас только один drift 12→7.83 Hz
+
+FR-3: TTS
+
+Повторение 3 раза с паузой 15 сек — сейчас speak() один раз
+Тихое воспроизведение 30% — нет параметра громкости в speak()
+Авто-язык — tts.language = Locale.getDefault() есть, но текст аффирмации хардкодирован — нет when(locale.language) ветвления
+
+FR-4: Детекция фаз сна / UI
+
+SessionScreen "Терминал" — тех-спек упоминает terminal-style view с командами (> stats, > wave, > geocell) — не реализовано
+DataQuality индикатор — POOR/FAIR/GOOD/VALID есть в движке (BIOKEY_SNAPSHOT validity=DEGRADED), но в SessionScreen не отображается
+Повтор будильника — snooze(minutes) есть в старом _wip коде, но в нашей реализации отсутствует
+
+Экспорт/Сеть:
+
+Геолокация — GeoProvider.kt существует, но getUserId() вызывается с null geo
+MQTT фильтрация по качеству — тех-спек: публикация только при GOOD+, сейчас публикуется всё (и DEGRADED)
+
+Доделки на v.0.5
+
+P1 — Критично для ночного теста
+Paso 10: WakeScreen
+Отдельный экран при срабатывании будильника. ScreenState.WAKE → новый экран с большой кнопкой "Проснулся" (dismiss) и "Ещё 10 минут" (snooze). Добавить в ScreenRouter, MainActivity, AndroidAlarmExecutor.ACTION_WAKE.
+Paso 11: Snooze
+В нотификации добавить ACTION_SNOOZE → AlarmScheduler.schedule(+10 мин) + stopVibration/ringtone без отмены сессии.
+Paso 12: TTS — 3 повторения + локаль
+В AndroidTtsEngine.speak() добавить when(locale.language) для текста + Handler.postDelayed для 3 повторений с паузой 15 сек.
+
+P2 — Качество и точность
+Paso 13: Fade-in будильника
+В AndroidAlarmExecutor.fire() — после startVibration() запустить Thread { for 30 шагов: setStreamVolume(i * maxVol/30); sleep(1000) }.
+Paso 14: DataQuality в SessionScreen
+Добавить строку "КАЧЕСТВО: POOR / FAIR / GOOD" в refresh() — читать из app.engineCore.getUiState().waveRating.
+Paso 15: Адаптация биений к дыханию
+В BioAudioEngine добавить setTargetDelta(hz: Double). В SleepForegroundService.tick() читать breathSensor.getState()?.breathPeriodSec и вызывать adaptToBreathing() по алгоритму из тех-спека.
+
+P3 — Post-MVP
+Paso 16: Терминал
+ScreenState.TERMINAL — terminal-style экран с командами > stats, > wave, > geocell, > export. Открывается тапом 7 раз на header в SessionScreen.
+Paso 17: Геолокация в userId
+GeoProvider.kt уже есть — подключить к UserIdentityProvider.generateUserId(geo) с fallback на IP.
+Paso 18: MQTT фильтрация
+В MqttTelemetryPublisher.publish() добавить guard: if (waveRating != GOOD && waveRating != EXCELLENT) return.
+
